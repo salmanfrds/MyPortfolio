@@ -1,0 +1,300 @@
+* {
+    font-family: 'lora', serif;
+    font-weight: 400;
+    font-size: 14px;
+    outline: none;
+    background: none;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    background-color: rgba(20, 20, 20, 0.178);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: outset 2px #7DA2A9;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top: outset 2px #7DA2A9;
+    padding-top: 10px;
+    margin-top: 15px;
+}
+
+.navbuttons a {
+    color:rgb(36, 32, 63);
+    font-weight: 500;
+}
+
+.student a{
+    color:rgb(36, 32, 63);
+    font-weight: 500;
+}
+
+.navbuttons a:hover {
+    color: #5e7b80; /* Lighter blue for hover effect */
+    font-weight: 600;
+}
+
+.student a:hover {
+    color: rgba(36, 32, 63, 0.559);
+    font-weight: 600;
+}
+
+.navbuttons a::after{
+    content: '';
+    display: block;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #7DA2A9;
+    transition: 0.2s linear;
+    transform: scaleX(0);
+}
+
+.navbuttons a:hover::after{
+    transform: scaleX(0.5);
+}
+
+.navbuttons{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.student a::after{
+    content: '';
+    display: block;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #7DA2A9;
+    transition: 0.2s linear;
+    transform: scaleX(0);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 50px;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.image img {
+    width: 100%; 
+    max-width: 300px;
+    max-height: 300px;
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
+    border-radius: 360px;
+    border: outset 5px #7DA2A9;
+}
+
+.textbox{
+    background-color: #7da2a96f;
+    border-radius: 20px;
+    width: 700px;
+    display: flex;
+    justify-content:center; 
+    align-items: center;
+    text-align: center;           
+}
+
+.textbox p{
+    font-size: 18px;
+    margin: 20px;
+}
+
+.icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 4; /* Remove top padding */
+    border: outset 3px;
+    border-color: #7DA2A9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon:hover {
+    background-color: #E0E0E0;
+    border-color: #005DA3;
+    transition: ease 0.3s;
+}
+
+
+.time-content{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 20px;
+    text-align: center;
+}
+
+h1{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.edu-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.school img {
+    display: block;
+    width: 400px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    padding: 10px;
+    border:outset 5px #7DA2A9;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.school{
+    width: 400px;
+}
+
+.list-school{
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-school a{
+    font-size: 18px;
+}
+
+.sd-smp{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sma-coolyeah{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.favorite-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.Hobbies-img{
+    width: 600px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    padding: 10px;
+    border:outset 5px #7DA2A9;
+    max-width: 100%;
+}
+
+.contact-content{
+    color: #E0E0E0;
+    background-color: #3545489e;
+    margin-top: 15px;
+}
+
+.con_fot .icon{
+    color: #263133;
+    background-color: #e0e0e061;
+}
+
+.con_fot .icon:hover{
+    color: #E0E0E0;
+}
+
+.con_nav a{
+    color: #E0E0E0;
+}
+
+/* Media Queries for Tablet and Phone Sizes */
+@media (max-width: 768px) { /* Tablet Size */
+    .textbox {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .image img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .Hobbies-img {
+        width: 90%;
+    }
+
+    .school img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) { /* Phone Size */
+    .textbox {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .textbox p{
+        font-size: 8px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .image img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .Hobbies-img {
+        width: 90%;
+    }
+
+    .school img {
+        width: 90%;
+    }
+
+    .navbuttons a{
+        font-size: 8px;
+    }
+
+    .student a{
+        font-size: 8px;
+    }
+}
