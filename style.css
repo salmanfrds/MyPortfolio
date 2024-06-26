@@ -238,6 +238,24 @@ h1{
     color: #E0E0E0;
 }
 
+.table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.table td, .table th {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.pdf-viewer {
+    width: 100%;
+    height: 500px;
+    border: none; /* Removes the default border */
+}
+
 /* Media Queries for Tablet and Phone Sizes */
 @media (max-width: 768px) { /* Tablet Size */
     .textbox {
@@ -260,6 +278,36 @@ h1{
 
     .school img {
         width: 90%;
+    }
+
+    .Hobbies-img{
+        width: 400px; /* Adjust the width as needed */
+    }
+
+    .list-school{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .school img {
+        display: block;
+        width: 300px; /* Adjust the width as needed */
+    }
+    
+    .school{
+        width: 350px;
+    }
+
+    .table td, .table th {
+        padding: 6px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+
+    /* Default styles for the PDF viewer */
+    .pdf-viewer {
+        width: 100%;
+        height: 500px;
+        border: none; /* Removes the default border */
     }
 }
 
@@ -296,5 +344,27 @@ h1{
 
     .student a{
         font-size: 8px;
+    }
+
+    .Hobbies-img{
+        width: 200px; /* Adjust the width as needed */
+    }
+
+    .school img {
+        display: block;
+        width: 200px; /* Adjust the width as needed */
+    }
+    
+    .school{
+        width: 300px;
+    }
+
+    .pdf-viewer {
+        height: 300px; /* Decrease height for smaller screens */
+    }
+
+    .table td, .table th {
+        padding: 6px; /* Adjust padding for smaller screens */
+        font-size: 12px; /* Decrease font size for smaller screens */
     }
 }
